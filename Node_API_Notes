@@ -1,0 +1,29 @@
+To double check if you have Node installed, do:
+=> node
+if it says command not found, then you don't have it.
+
+To install the most stable Node version, do:
+=> sudo n stable
+
+To install that Node version e.g. 16.15.1, do:
+=> nvm install 16.17.1
+
+To double check the installed version do:
+=> npm version
+
+The npm init command is used to create a Node. js project
+=> npm init
+
+The packages we are going to need are:
+Nodemon - to restart node server and update any changes we make
+=> npm i --save-dev nodemon
+
+Dotenv - to create environment variables
+=> npm i dotenv
+
+Then, we create index.js file - and we add "start": "nodemon index.js" in the package.json file, under the scripts so that we can start the node server from that file
+then we start the server by:
+=> npm start
+
+To install thunder client (to send http requests)
+=> 
