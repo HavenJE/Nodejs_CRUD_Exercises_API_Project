@@ -1,5 +1,30 @@
-[{"id":"1","name":"Dead Lift","extremity":"Lower limb","muscles":"hamstrings","protocol":"Strength"},
-{"id":"2","name":"Squad","extremity":"Lower limb","muscles":"quadriceps","protocol":"Strength"},
-{"id":"3","name":"Shoulder press","extremity":"Upper limb","muscles":"Anterior deltoid + Biceps","protocol":"Strength"},
-{"id":"4","name":"Push-ups","extremity":"Upper limb","muscles":"Pectoralis major + Biceps + Triceps","protocol":"Strength"},
-{"name":"Alternative lunges","extremity":"Lower limb","muscles":"quadriceps","protocol":"Strength","id":"cfa27a44-b114-44e4-8f6c-008d247f1867"}]
+[
+    {
+        "id": "1",
+        "name": "Dead Lift",
+        "extremity": "Lower limb",
+        "muscles": "hamstrings",
+        "protocol": "Strength"
+    },
+    {
+        "id": "2",
+        "name": "Squad",
+        "extremity": "Lower limb",
+        "muscles": "quadriceps",
+        "protocol": "Strength"
+    },
+    {
+        "id": "3",
+        "name": "Shoulder press",
+        "extremity": "Upper limb",
+        "muscles": "Anterior deltoid + Biceps",
+        "protocol": "Strength"
+    },
+    {
+        "id": "4",
+        "name": "Push-ups",
+        "extremity": "Upper limb",
+        "muscles": "Pectoralis major + Biceps + Triceps",
+        "protocol": "Strength"
+    }
+]
