@@ -25,5 +25,8 @@ Then, we create index.js file - and we add "start": "nodemon index.js" in the pa
 then we start the server by:
 => npm start
 
-To install thunder client (to send http requests)
-=> 
+To install thunder client (to send http requests) go to extension and type thunder client
+
+When working on the POST method file, we need to use something called the body parser, which can be provided by Express, since we are not using Express, then we need 
+to install the body parser then we pass the input request. We are going to install something similar to the parser to stream the data from the client to the server. 
+We create a Folder called utilities, within it, we create a file called body-parser.js

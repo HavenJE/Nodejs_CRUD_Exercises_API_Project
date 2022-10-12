@@ -21,8 +21,12 @@ module.exports = (req, res) => {
         res.end(); 
     } else if (!regexV4.test(id)) { // check of the uuid passed is valid - if return is false, then return the following: 
         res.writeHead(400, { "Content-type": "application/json"});
-        res.end(JSON.stringify({ title: "Failed Validation!", message: "Your UUID is not valid!" }))
-    } else if (baseUrl === "/api/exercises/" || regexV4.test(id)) { // if UUID valid is true, then return the individual exercise  
+        res.end(JSON.stringify({ 
+            title: "Failed Validation!", 
+            message: "Your UUID is not valid!" 
+        })
+        )
+    } else if (baseUrl === "/api/exercises/" && regexV4.test(id)) { // if UUID valid is true, then return the individual exercise  
         res.statusCode = 200;
         res.setHeader("Content-type", "application/json");
         let filterExercise = req.exercises.filter((exercise => {
@@ -36,12 +40,19 @@ module.exports = (req, res) => {
         res.end(); 
         } else {
             res.statusCode = 404;
-            res.write(JSON.stringify({ title: "Not Found!", message: "The Exercise you looking for is not found!" })); 
+            res.write(JSON.stringify({ 
+                title: "Not Found!", 
+                message: "The Exercise you looking for is not found!" 
+            })
+            ); 
         res.end(); 
         }
     }
     else {
         res.writeHead(404, { "Content-type": "application/json"});
-        res.end(JSON.stringify({ title: "Not Found!", message: "Route not found!" }))
+        res.end(JSON.stringify({ 
+            title: "Not Found!", 
+            message: "Route not found!" 
+        }))
     }
 };
